@@ -1,0 +1,177 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+	<title>Gustavo Bejar</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<link rel="stylesheet" href="assets/css/main.css" />
+</head>
+
+<body class="is-preload">
+
+	<!-- Header -->
+	<header id="header">
+		<div class="inner">
+			<a href="index.html" class="image avatar"><img src="images/avatar.jpg" alt="" /></a>
+			<h1><strong>Hola, I'm Gustavo</strong></h1>
+			PhD candidate and volcanologist at Michigan Tech
+		</div>
+	</header>
+
+	<!-- Main -->
+	<div id="main">
+
+		<!-- One -->
+		<section id="one">
+			<header class="major">
+				<h2>🌋 Volcán de Fuego Lahars</h2>
+			</header>
+			<p>As part of my PhD, I study lahars, fast-moving volcanic flows
+				that threaten communities like those around Volcán de Fuego in Guatemala.
+				I focus on three main tasks: 1) describing the seismology
+				of these flows to develop machine learning-based lahar detectors,
+				2) estimating predictors for lahar initation and flow behavior
+				based on rainfall data, and 3) numerical lahar flow models.
+				Click below to learn more about my work. </p>
+			<p> Check the pre-print from this work in the link below.</p>
+			<ul class="actions">
+				<li><a href="https://doi.org/10.22541/essoar.174835401.10991195/v1"
+						class="button icon solid fa-book">Link to
+						Pre-print</a></li>
+			</ul>
+		</section>
+
+		<!-- Two -->
+		<section id="two">
+			<h2>1. LaharML: A Machine Learning-Based Flow Detector</h2>
+			<div class="box alt">
+				<div class="row gtr-50 gtr-uniform">
+					<div class="col-12"><span class="image fit no-overlay"><img src="images/lahar_1.jpeg"
+								alt="" /></span>
+					</div>
+				</div>
+			</div>
+			<p>Lahars are a family of volcanic sediment-laden flows that threaten
+				communities around active volcanoes. They are difficult to detect and monitor, especially in remote
+				areas.
+				We developed a machine learning-based lahar detector that uses seismic data to identify lahars in
+				real-time.
+				The model is trained on a large dataset of seismic signals from lahars and other volcanic processes, and
+				it can
+				detect lahars with high accuracy. The model is currently being tested at Volcán de Fuego in Guatemala
+				thanks
+				to a collaboration with the local agency INSIVUMEH.
+			</p>
+			<p>
+				The figure above illustrates the operation of the detector. This is K-Nearest Neighbors (KNN) model that
+				classifies real-time data depending on their similarity to a training set of seismic signals.
+				To do this, it extracts features that describe the signal in the time and frequency domains, power
+				ratios, and
+				statistical functions. These features are samples from windowed data and the results undergo a
+				post-processing
+				validation that reduces erroneous classifications and returns lahar activity intervals.
+			</p>
+			<p>
+				This tool is currently being tested at Volcán de Fuego via INSIVUMEH. In addition, the methodology is
+				being adapted to work with lahars at Santiaguito, and other types of flows such as pyroclastic density
+				current.
+				Furthermore, this work is currently in the process of submission for peer-review.
+			</p>
+
+		</section>
+
+		<!-- Three -->
+		<section id="three">
+			<h2>2. Rainfall controls on lahar generation and propagation</h2>
+			<div class="box alt">
+				<div class="row gtr-50 gtr-uniform">
+					<div class="col-12"><span class="image fit no-overlay"><img src="images/lahar_2.jpeg"
+								alt="" /></span>
+					</div>
+				</div>
+			</div>
+			<p>Lahar activity at Volcán de Fuego is strongly influenced by rainfall. Because these flows are typically
+				triggered during intense or prolonged rainfall events, understanding precipitation patterns is key to
+				improving lahar forecasts and hazard mitigation. We are exploring how both the occurrence and physical
+				characteristics of lahars respond to rainfall input, using rain gauge measurements and seismic data from
+				stations along the lahar pathways.</p>
+			<p>
+				The figure above shows a comparison between rainfall accumulation and seismic lahar detections over a
+				multi-year period. Each colored dot represents a detected lahar, with its position corresponding to
+				cumulative rainfall, flow duration (left), or seismic energy (right). We observe that lahars tend to
+				cluster during the rainy seasons, and their intensity—measured here as flow duration or energy—generally
+				scales with the amount of antecedent rainfall. This suggests a threshold behavior where wetter
+				conditions not only make lahars more likely but also influence their dynamics and size. Ongoing work is
+				focused on deriving intensity–duration thresholds and exploring how rainfall structure (e.g. bursts vs.
+				steady rain) controls lahar evolution.
+			</p>
+
+		</section>
+
+		<!-- Four -->
+		<section id="four">
+			<header>
+				<h2>3. Lahar flow modeling and comparison with geophysical data</h2>
+				<p>Coming soon</p>
+			</header>
+		</section>
+
+		<!-- End -->
+		<section id="end">
+			<h2>Get In Touch</h2>
+			<div class="row">
+				<div class="col-12 col-12-small">
+					<ul class="labeled-icons">
+						<li>
+							<h3 class="icon solid fa-building"><span class="label">Address</span></h3>
+							Michigan Technological University<br />
+							422 Dow Environmental Sciences and Engineering<br />
+							1400 Townsend Dr<br />
+							Houghton, MI 49931<br />
+							United States
+						</li>
+						<li>
+							<h3 class="icon solid fa-envelope"><span class="label">Email</span></h3>
+							<a href="mailto:gbejarlo@mtu.edu">gbejarlo@mtu.edu</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</section>
+
+	</div>
+
+	<!-- Footer -->
+	<footer id="footer">
+		<div class="inner">
+			<ul class="icons">
+				<li><a href="https://www.instagram.com/gbejarl" class="icon brands fa-instagram"><span
+							class="label">Instagram</span></a></li>
+				<li><a href="https://www.linkedin.com/in/gbejarl" class="icon brands fa-linkedin"><span
+							class="label">Linked-In</span></a></li>
+				<li><a href="https://www.github.com/gbejarl" class="icon brands fa-github"><span
+							class="label">Github</span></a></li>
+				<li><a href="https://www.youtube.com/gbejarl" class="icon brands fa-youtube"><span
+							class="label">YouTube</span></a></li>
+				<li><a href="mailto:gbejarlo@mtu.edu" class="icon solid fa-envelope"><span
+							class="label">Email</span></a></li>
+			</ul>
+			<ul class="copyright">
+				<li>&copy; Gustavo Bejar, 2025</li>
+				<li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+			</ul>
+		</div>
+	</footer>
+
+	<!-- Scripts -->
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/jquery.poptrox.min.js"></script>
+	<script src="assets/js/browser.min.js"></script>
+	<script src="assets/js/breakpoints.min.js"></script>
+	<script src="assets/js/util.js"></script>
+	<script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
