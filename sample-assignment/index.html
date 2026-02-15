@@ -1,12 +1,12 @@
 <html dir="ltr" lang="en" xml:lang="en" class="yui3-js-enabled">
 
 <head>
-    <title>E&amp;E 133 1L (Bejar - Spring 2026): Lab 3: Census County Data in Vector Format: Edit | Albion College
-    </title>
+    <title>E&amp;E 133 1L (Bejar - Spring 2026): Lab 3: Census County Data in Vector Format: Part 2: Acquiring Data |
+        Albion College</title>
     <link rel="shortcut icon" href="https://courses.albion.edu/theme/image.php/boost/theme/1770996211/favicon">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <meta name="keywords"
-        content="moodle, E&amp;E 133 1L (Bejar - Spring 2026): Lab 3: Census County Data in Vector Format: Edit | Albion College">
+        content="moodle, E&amp;E 133 1L (Bejar - Spring 2026): Lab 3: Census County Data in Vector Format: Part 2: Acquiring Data | Albion College">
     <link rel="stylesheet" type="text/css" href="theme/yui_combo.php">
     <link rel="stylesheet" type="text/css" href="theme/styles.php/boost/1770996211_1/all">
 
@@ -20,8 +20,8 @@
         src="lib/javascript.php/1770996211/lib/jquery/jquery_3.7.1.min.js"></script>
 </head>
 
-<body id="page-mod-lesson-edit"
-    class="format-topics limitedwidth path-mod path-mod-lesson chrome dir-ltr lang-en_us yui-skin-sam yui3-skin-sam courses-albion-edu pagelayout-incourse course-17602 context-818056 cmid-650491 cm-type-lesson category-144 theme uses-drawers jsenabled">
+<body id="page-mod-lesson-view"
+    class="format-topics limitedwidth  path-mod path-mod-lesson chrome dir-ltr lang-en_us yui-skin-sam yui3-skin-sam courses-albion-edu pagelayout-incourse course-17602 context-818056 cmid-650491 cm-type-lesson category-144 theme uses-drawers jsenabled">
     <div class="toast-wrapper mx-auto py-0 fixed-top" role="status" aria-live="polite"></div>
     <div id="page-wrapper" class="d-print-block">
 
@@ -38,7 +38,8 @@
         <nav class="navbar fixed-top navbar-light bg-white navbar-expand" aria-label="Site navigation">
             <div class="container-fluid">
                 <button class="navbar-toggler aabtn d-block d-md-none px-1 my-1 border-0" data-toggler="drawers"
-                    data-action="toggle" data-target="theme_boost-drawers-primary">
+                    data-action="toggle" data-target="theme_boost-drawers-primary" data-disabled-toggle="undefined"
+                    data-restore-tooltip-on-blur="true">
                     <span class="navbar-toggler-icon"></span>
                     <span class="sr-only">Side panel</span>
                 </button>
@@ -55,10 +56,96 @@
 
                 </ul>
 
-
             </div>
         </nav>
 
+
+        <div class="drawer drawer-left drawer-primary d-print-none" data-region="fixed-drawer"
+            id="theme_boost-drawers-primary" data-preference="" data-state="show-drawer-primary" data-forceopen="0"
+            data-close-on-resize="1" aria-hidden="true">
+            <div class="drawerheader">
+                <button class="btn drawertoggle icon-no-margin hidden" data-toggler="drawers" data-action="closedrawer"
+                    data-target="theme_boost-drawers-primary" data-toggle="tooltip" data-placement="right"
+                    title="Close drawer" data-aria-hidden-tab-index="" tabindex="-1">
+                    <i class="icon fa fa-xmark fa-fw " aria-hidden="true"></i>
+                </button>
+                <a href="https://courses.albion.edu/my/courses.php" title="Albion College" data-region="site-home-link"
+                    class="aabtn text-reset d-flex align-items-center py-1 h-100 d-md-none"
+                    data-aria-hidden-tab-index="" tabindex="-1">
+                    <img src="pluginfile.php/1/core_admin/logocompact/300x300/1770996211/albion_2_20color.png"
+                        class="logo py-1 h-100" alt="Albion College">
+
+                </a>
+                <div class="drawerheadercontent hidden">
+
+                </div>
+            </div>
+            <div class="drawercontent drag-container" data-usertour="scroller">
+                <div class="list-group">
+                    <a href="https://courses.albion.edu/?redirect=0" class="list-group-item list-group-item-action  "
+                        data-aria-hidden-tab-index="" tabindex="-1">
+                        Home
+                    </a>
+                    <a href="https://courses.albion.edu/my/" class="list-group-item list-group-item-action  "
+                        data-aria-hidden-tab-index="" tabindex="-1">
+                        Dashboard
+                    </a>
+                    <a href="https://courses.albion.edu/my/courses.php" class="list-group-item list-group-item-action  "
+                        data-aria-hidden-tab-index="" tabindex="-1">
+                        My courses
+                    </a>
+                    <a id="drop-down-1" href="#"
+                        class="list-group-item list-group-item-action icons-collapse-expand collapsed d-flex"
+                        data-toggle="collapse" data-target="#drop-down-menu-1" aria-expanded="false"
+                        aria-controls="drop-down-menu-1" data-aria-hidden-tab-index="" tabindex="-1">
+                        Campus Links
+                        <span class="ms-auto expanded-icon icon-no-margin mx-2">
+                            <i class="icon fa fa-chevron-down fa-fw " aria-hidden="true"></i>
+                            <span class="sr-only">
+                                Collapse
+                            </span>
+                        </span>
+                        <span class="ms-auto collapsed-icon icon-no-margin mx-2">
+                            <i class="icon fa fa-chevron-right fa-fw " aria-hidden="true"></i>
+                            <span class="sr-only">
+                                Expand
+                            </span>
+                        </span>
+                    </a>
+                    <div class="collapse list-group-item p-0 border-0" role="menu" id="drop-down-menu-1"
+                        aria-labelledby="drop-down-1">
+                        <a href="https://albion.edu/ " target="_blank"
+                            class="ps-5 bg-light list-group-item list-group-item-action" data-aria-hidden-tab-index=""
+                            tabindex="-1">Albion Home</a>
+                        <a href="https://www.albion.edu/offices/registrar/academic-calendar/" target="_blank"
+                            class="ps-5 bg-light list-group-item list-group-item-action" data-aria-hidden-tab-index=""
+                            tabindex="-1">Academic Calendar</a>
+                        <a href="https://today.albion.edu/ " target="_blank"
+                            class="ps-5 bg-light list-group-item list-group-item-action" data-aria-hidden-tab-index=""
+                            tabindex="-1">Albion Today</a>
+                        <a href="https://www.albion.edu/events/ " target="_blank"
+                            class="ps-5 bg-light list-group-item list-group-item-action" data-aria-hidden-tab-index=""
+                            tabindex="-1">Campus Events</a>
+                        <a href="https://library.albion.edu/" target="_blank"
+                            class="ps-5 bg-light list-group-item list-group-item-action" data-aria-hidden-tab-index=""
+                            tabindex="-1">Library</a>
+                        <a href="https://www.albion.edu/offices/cutler-center/accessibility-services/ " target="_blank"
+                            class="ps-5 bg-light list-group-item list-group-item-action" data-aria-hidden-tab-index=""
+                            tabindex="-1">Accessibility Services</a>
+                        <a href="https://www.albion.edu/offices/cutler-center/tutoring/ " target="_blank"
+                            class="ps-5 bg-light list-group-item list-group-item-action" data-aria-hidden-tab-index=""
+                            tabindex="-1">Peer Tutoring</a>
+                        <a href="https://www.albion.edu/offices/cutler-center/writing-consultations/ " target="_blank"
+                            class="ps-5 bg-light list-group-item list-group-item-action" data-aria-hidden-tab-index=""
+                            tabindex="-1">Writing Center Consultations</a>
+                        <a href="https://coursewebs.albion.edu/grade/report/overview/index.php"
+                            class="ps-5 bg-light list-group-item list-group-item-action" data-aria-hidden-tab-index=""
+                            tabindex="-1">View Grades</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
         <div class="drawer drawer-left d-print-none scrolled" data-region="fixed-drawer"
             id="theme_boost-drawers-courseindex" data-preference="drawer-open-index" data-state="show-drawer-left"
             data-forceopen="0" data-close-on-resize="0" aria-hidden="true">
@@ -1729,10 +1816,11 @@
         <div class="drawer drawer-right d-print-none" data-region="fixed-drawer" id="theme_boost-drawers-blocks"
             data-preference="drawer-open-block" data-state="show-drawer-right" data-forceopen=""
             data-close-on-resize="1" aria-hidden="true">
-            <div class="drawerheader">
+            <div class="drawerheader" id="yui_3_18_1_1_1771130433962_32">
                 <button class="btn drawertoggle icon-no-margin hidden" data-toggler="drawers" data-action="closedrawer"
-                    data-target="theme_boost-drawers-blocks" data-toggle="tooltip" data-placement="left"
-                    title="Close block drawer" data-aria-hidden-tab-index="" tabindex="-1">
+                    data-target="theme_boost-drawers-blocks" data-toggle="tooltip" data-placement="left" title=""
+                    data-original-title="Close block drawer" id="yui_3_18_1_1_1771130433962_31"
+                    data-aria-hidden-tab-index="" tabindex="-1">
                     <i class="icon fa fa-xmark fa-fw " aria-hidden="true"></i>
                 </button>
                 <a href="https://courses.albion.edu/my/courses.php" title="Albion College" data-region="site-home-link"
@@ -1880,10 +1968,9 @@
 
             </div>
         </div>
-        <div id="page" data-region="mainpage" data-usertour="scroller" class="drawers   drag-container">
+        <div id="page" data-region="mainpage" data-usertour="scroller" class="drawers drag-container">
             <div id="topofscroll" class="main-inner">
                 <div class="drawer-toggles d-flex">
-
                 </div>
                 <header id="page-header" class="header-maxwidth d-print-none">
                     <div class="w-100">
@@ -1906,10 +1993,9 @@
                                         </li>
 
                                         <li class="breadcrumb-item">
-                                            <a href="https://courses.albion.edu/mod/lesson/view.php?id=650491"
-                                                title="Lesson">
+                                            <span>
                                                 Lab 3: Census County Data in Vector Format
-                                            </a>
+                                            </span>
                                         </li>
                                     </ol>
                                 </nav>
@@ -1936,7 +2022,7 @@
                 </header>
                 <div class="secondary-navigation d-print-none">
                     <nav class="moremenu navigation observed">
-                        <ul id="moremenu-69914326d715c-nav-tabs" role="menubar" class="nav more-nav nav-tabs">
+                        <ul id="moremenu-69914e41dfaaf-nav-tabs" role="menubar" class="nav more-nav nav-tabs">
                             <li data-key="modulepage" class="nav-item" role="none" data-forceintomoremenu="false">
                                 <a role="menuitem" class="nav-link active active_tree_node "
                                     href="https://courses.albion.edu/mod/lesson/view.php?id=650491" aria-current="true"
@@ -1965,13 +2051,13 @@
                                 </a>
                             </li>
                             <li role="none" class="nav-item dropdown dropdownmoremenu" data-region="morebutton">
-                                <a class="dropdown-toggle nav-link " href="#" id="moremenu-dropdown-69914326d715c"
+                                <a class="dropdown-toggle nav-link " href="#" id="moremenu-dropdown-69914e41dfaaf"
                                     role="menuitem" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
                                     tabindex="-1">
                                     More
                                 </a>
                                 <ul class="dropdown-menu dropdown-menu-left" data-region="moredropdown"
-                                    aria-labelledby="moremenu-dropdown-69914326d715c" role="menu">
+                                    aria-labelledby="moremenu-dropdown-69914e41dfaaf" role="menu">
                                     <li data-key="mod_lesson_useroverrides" class="nav-item" role="none"
                                         data-forceintomoremenu="true">
                                         <a role="menuitem" class="dropdown-item"
@@ -2028,244 +2114,135 @@
 
                             <span class="notifications" id="user-notifications"></span>
                             <span id="maincontent"></span>
-                            <div class="activity-header" data-for="page-activity-header"></div>
-                            <div role="main">
-                                <div class="container-fluid tertiary-navigation">
-                                    <div class="row">
-                                        <div class="navitem">
-                                            <a class="btn btn-secondary"
-                                                href="https://courses.albion.edu/mod/lesson/view.php?id=650491">Back</a>
+                            <div class="activity-header" data-for="page-activity-header">
+                                <span class="sr-only">Completion requirements</span>
+                                <div data-region="activity-information"
+                                    data-activityname="Lab 3: Census County Data in Vector Format"
+                                    class="activity-information">
+
+
+                                    <div data-region="activity-dates" class="activity-dates">
+                                        <div>
+                                            <strong>Opened:</strong> Thursday, February 12, 2026, 2:15 PM
                                         </div>
-                                        <div class="navitem">
-                                            <div class="urlselect">
-                                                <form method="post"
-                                                    action="https://courses.albion.edu/course/jumpto.php"
-                                                    class="d-flex flex-wrap align-items-center"
-                                                    id="mod_lesson_navigation_select">
-                                                    <input type="hidden" name="sesskey" value="QKSdjbCVOu">
-                                                    <label for="url_select69914326d3d9f11" class="sr-only">
-                                                        Display mode
-                                                    </label>
-                                                    <select id="url_select69914326d3d9f11"
-                                                        class="custom-select urlselect" name="jump">
-                                                        <option
-                                                            value="/mod/lesson/edit.php?id=650491&amp;mode=collapsed">
-                                                            Collapsed</option>
-                                                        <option value="/mod/lesson/edit.php?id=650491&amp;mode=full">
-                                                            Expanded</option>
-                                                    </select>
-                                                    <noscript>
-                                                        <input type="submit" class="btn btn-secondary ms-1" value="Go">
-                                                    </noscript>
-                                                </form>
-                                            </div>
+                                        <div>
+                                            <strong>Closes:</strong> Thursday, February 19, 2026, 2:15 PM
                                         </div>
                                     </div>
                                 </div>
-                                <h2>Editing lesson</h2>
-                                <div class="box py-3 edit_pages_box">
-                                    <div class="box py-3 addlinks"><a
-                                            href="https://courses.albion.edu/mod/lesson/import.php?id=650491&amp;pageid=6303">Import
-                                            questions</a> |
-                                        <a
-                                            href="https://courses.albion.edu/mod/lesson/editpage.php?id=650491&amp;pageid=6303&amp;sesskey=QKSdjbCVOu&amp;qtype=21">Add
-                                            an end of branch</a> |
-                                        <a
-                                            href="https://courses.albion.edu/mod/lesson/editpage.php?id=650491&amp;pageid=6303&amp;sesskey=QKSdjbCVOu&amp;qtype=30">Add
-                                            a cluster</a> |
-                                        <a
-                                            href="https://courses.albion.edu/mod/lesson/editpage.php?id=650491&amp;pageid=6303&amp;sesskey=QKSdjbCVOu&amp;qtype=31">Add
-                                            an end of cluster</a> |
-                                        <a
-                                            href="https://courses.albion.edu/mod/lesson/editpage.php?id=650491&amp;pageid=6303&amp;qtype=20">Add
-                                            a content page</a> |
-                                        <a
-                                            href="https://courses.albion.edu/mod/lesson/editpage.php?id=650491&amp;pageid=6303">Add
-                                            a question page here</a>
+                                <div class="activity-description" id="intro">
+                                    <div class="no-overflow">
+                                        <p dir="ltr" style="text-align: left;">For this week's lab, you will familiarize
+                                            yourself with acquiring datasets from public sources, combining datasets of
+                                            different types, and generating effective visualizations. At the end of this
+                                            lab, you will submit your mapping product(s) to the dropbox set up for this
+                                            purpose.
+                                            Make sure you are not skipping this final step.<br></p>
                                     </div>
-                                    <div>
-                                        <div class="table-responsive">
-                                            <table class="generaltable boxaligncenter" width="100%" cellpadding="5px"
-                                                cellspacing="0">
-                                                <thead>
-                                                    <tr>
-                                                        <th class="header c0 lastcol"
-                                                            style="text-align:right;text-align:center" colspan="2"
-                                                            scope="col"><a id="lesson-6304"></a>Part 3: Preparing the
-                                                            Income Data
-                                                        </th>
-                                                    </tr>
-                                                </thead>
-                                                <tbody>
-                                                    <tr class="">
-                                                        <td class="cell c0 lastcol"
-                                                            style="text-align:right;text-align:left" colspan="2">
-                                                            <div class="no-overflow">
-                                                                <p dir="ltr" style="text-align: left;">1. First, we need
-                                                                    to do a few things to this .csv file in order for it
-                                                                    to work. This requires some Excel manipulation of
-                                                                    the data. We have to make sure that this Excel file
-                                                                    and the shapefile with Michigan counties can talk to
-                                                                    each other. For that, we will associated the GEO_ID
-                                                                    column in the Excel file with an identifier in the
-                                                                    shapefile. First, let's go ahead and remove the
-                                                                    second column in the Excel file. This is extra
-                                                                    information can be make our process break. For this,
-                                                                    right-click on row number and select
-                                                                    <em>Delete.</em>
-                                                                </p>
-                                                                <p dir="ltr" style="text-align: left;"><img
-                                                                        src="pluginfile.php/818056/mod_lesson/page_contents/6304/screenrecording2026_02_12at09.36.55_ezgif.com_video_to_gif_converter.gif"
-                                                                        alt="" role="presentation"
-                                                                        class="img-fluid"><br></p>
-                                                                <p dir="ltr" style="text-align: left;"><br></p>
-                                                                <p dir="ltr" style="text-align: left;">2. Next, we only
-                                                                    need the last three digits of the <em>GEO_ID</em>
-                                                                    column. We are going to use Excel functions to
-                                                                    select only those last three digits automatically
-                                                                    for all 83 rows in this table. For this, first
-                                                                    insert an empty column by right-clicking on the B
-                                                                    column name and then selecting <em>Insert</em>.</p>
-                                                                <p dir="ltr" style="text-align: left;"><img
-                                                                        src="pluginfile.php/818056/mod_lesson/page_contents/6304/screenrecording2026_02_12at09.40.15_ezgif.com_video_to_gif_converter.gif"
-                                                                        alt="" role="presentation"
-                                                                        class="img-fluid"><br></p>
-                                                                <p dir="ltr" style="text-align: left;"><br></p>
-                                                                <p dir="ltr" style="text-align: left;">3. At the top of
-                                                                    the column, add the name "GEO_ID2".</p>
-                                                                <p dir="ltr" style="text-align: left;"><img
-                                                                        src="pluginfile.php/818056/mod_lesson/page_contents/6304/screenrecording2026_02_12at09.41.59_ezgif.com_video_to_gif_converter.gif"
-                                                                        alt="" role="presentation"
-                                                                        class="img-fluid"><br></p>
-                                                                <p dir="ltr" style="text-align: left;"><br></p>
-                                                                <p dir="ltr" style="text-align: left;">4. Name, use the
-                                                                    function =RIGHT() to select the first digits of all
-                                                                    rows in the <em>GEO_ID</em>&nbsp;column. For this,
-                                                                    type "=RIGHT(A2, 3)"<em>&nbsp;</em>in the cell under
-                                                                    <em>GEO_ID2 </em>and press Enter. This function goes
-                                                                    to cell A2 (column A, row 2), reads its value, and
-                                                                    returns the three characters counted from the right.
-                                                                    The value <em>001</em> should appear.
-                                                                </p>
-                                                                <p dir="ltr" style="text-align: left;"><img
-                                                                        src="pluginfile.php/818056/mod_lesson/page_contents/6304/screenrecording2026_02_12at09.47.15_ezgif.com_video_to_gif_converter.gif"
-                                                                        alt="" role="presentation"
-                                                                        class="img-fluid"><br></p>
-                                                                <p dir="ltr" style="text-align: left;"><br></p>
-                                                                <p dir="ltr" style="text-align: left;">5. Select the
-                                                                    cell that you just filled with the function (the one
-                                                                    with <em>001</em>). See the little green square in
-                                                                    the bottom right corner of that cell? Double-click
-                                                                    it. This will apply the function for all the cells
-                                                                    below while making sure that they take the
-                                                                    respective value of <em>GEO_ID </em>as it moves
-                                                                    down. If you did this correctly, the column will
-                                                                    populate with odd numbers from 001 to 165.</p>
-                                                                <p dir="ltr" style="text-align: left;"><img
-                                                                        src="pluginfile.php/818056/mod_lesson/page_contents/6304/screenrecording2026_02_12at09.50.58_ezgif.com_video_to_gif_converter.gif"
-                                                                        alt="" role="presentation"
-                                                                        class="img-fluid"><br></p>
-                                                                <p dir="ltr" style="text-align: left;"><br></p>
-                                                                <p dir="ltr" style="text-align: left;">6. Select the
-                                                                    whole <em>GEO_ID2</em>&nbsp;column by clicking on
-                                                                    the column name (should B). Then, change the input
-                                                                    format to Text. This makes sure that in ArcGIS Pro
-                                                                    we compare text to text, instead of text to numbers.
-                                                                    ArcGIS Pro prefers to compare apples to apples and
-                                                                    not apples to oranges.</p>
-                                                                <p dir="ltr" style="text-align: left;"><img
-                                                                        src="pluginfile.php/818056/mod_lesson/page_contents/6304/screenrecording2026_02_12at09.55.11_ezgif.com_video_to_gif_converter.gif"
-                                                                        alt="" role="presentation"
-                                                                        class="img-fluid"><br></p>
-                                                                <p dir="ltr" style="text-align: left;"><br></p>
-                                                                <p dir="ltr" style="text-align: left;">7. Now, let's
-                                                                    make sure to save this table as an Excel file.
-                                                                    Currently, the table is saved as a .csv file, which
-                                                                    does not preserve the Text formatting we applied in
-                                                                    the previous step. For this, go to the File ribbon
-                                                                    and click Save As. <span class=""
-                                                                        style="background-color: rgb(255, 207, 53);">M</span><span
-                                                                        class=""
-                                                                        style="background-color: rgb(255, 207, 53);">ake
-                                                                        sure you are selecting Save As and not the plain
-                                                                        Save option, otherwise, you will maintain the
-                                                                        .csv format and lose your progress.<span
-                                                                            class=""
-                                                                            style="background-color: rgb(255, 255, 255);">&nbsp;Save
-                                                                            the file in your lab folder and call it
-                                                                            <em>IncomeData</em>. <span class=""
-                                                                                style="background-color: rgb(255, 207, 53);">Make
-                                                                                sure you save it as an Excel Workbook
-                                                                                (.xlsx) or you will lose your
-                                                                                progress</span>.</span></span></p>
-                                                                <p dir="ltr" style="text-align: left;"><img
-                                                                        src="pluginfile.php/818056/mod_lesson/page_contents/6304/screenrecording2026_02_12at09.59.00_ezgif.com_video_to_gif_converter.gif"
-                                                                        alt="" role="presentation"
-                                                                        class="img-fluid"><br></p>
-                                                                <p dir="ltr" style="text-align: left;"><br></p>
-                                                                <p dir="ltr" style="text-align: left;"><span class=""
-                                                                        style="background-color: rgb(255, 207, 53);">8.
-                                                                        Answer Part 3 Questions in the handout.</span>
-                                                                </p>
-                                                                <p dir="ltr" style="text-align: left;"><br></p>
-                                                                <p dir="ltr" style="text-align: left;">9. Navigate to
-                                                                    the next page.</p>
-                                                            </div>
-                                                        </td>
-                                                    </tr>
-                                                    <tr class="">
-                                                        <td class="cell c0 lastcol"
-                                                            style="text-align:right;text-align:center" colspan="2">
-                                                            <strong>Content</strong>
-                                                        </td>
-                                                    </tr>
-                                                    <tr class="">
-                                                        <td class="cell c0" style="text-align:right;"><label>Content
-                                                                1</label>: </td>
-                                                        <td class="cell c1 lastcol" style="text-align:left;">Previous
-                                                            page</td>
-                                                    </tr>
-                                                    <tr class="">
-                                                        <td class="cell c0" style="text-align:right;width:20%;">
-                                                            <label>Jump 1</label>:
-                                                        </td>
-                                                        <td class="cell c1 lastcol" style="text-align:left;">Previous
-                                                            page</td>
-                                                    </tr>
-                                                    <tr class="">
-                                                        <td class="cell c0" style="text-align:right;"><label>Content
-                                                                2</label>: </td>
-                                                        <td class="cell c1 lastcol" style="text-align:left;">Next page
-                                                        </td>
-                                                    </tr>
-                                                    <tr class="lastrow">
-                                                        <td class="cell c0" style="text-align:right;"><label>Jump
-                                                                2</label>: </td>
-                                                        <td class="cell c1 lastcol" style="text-align:left;">Next page
-                                                        </td>
-                                                    </tr>
-                                                </tbody>
-                                            </table>
-                                        </div>
+                                </div>
+                            </div>
+                            <div role="main">
+                                <h2>Part 2: Acquiring Data</h2>
+                                <div class="box py-3 contents">
+                                    <div class="no-overflow">
+                                        <p dir="ltr" style="text-align: left;">1. We can acquire geospatial state data
+                                            through the following website maintained by the State of Michigan:&nbsp;<a
+                                                href="https://gis-michigan.opendata.arcgis.com/">https://gis-michigan.opendata.arcgis.com/</a>.
+                                            Use the browser to access the website. In the welcome page, type "county" in
+                                            the textbox and press Enter. Find the <em>County</em>&nbsp;dataset and click
+                                            on it.</p>
+                                        <p dir="ltr" style="text-align: left;"><img
+                                                src="pluginfile.php/818056/mod_lesson/page_contents/6303/screenrecording2026_02_11at19.28.03_ezgif.com_video_to_gif_converter_2.gif"
+                                                alt="" role="presentation" class="img-fluid"><br></p>
+                                        <p dir="ltr" style="text-align: left;"><br></p>
+                                        <p dir="ltr" style="text-align: left;">2. Download this dataset as a Shapefile.
+                                            Because shapefiles are more like a collection of files, this will download
+                                            as a .zip file (compressed folder). Keep track of where this file is saved
+                                            in your computer. Most likely, it will go to the Download folders.</p>
+                                        <p dir="ltr" style="text-align: left;"><img
+                                                src="pluginfile.php/818056/mod_lesson/page_contents/6303/screenrecording2026_02_11at19.44.11_ezgif.com_video_to_gif_converter.gif"
+                                                alt="" role="presentation" class="img-fluid"><br></p>
+                                        <p dir="ltr" style="text-align: left;"><br></p>
+                                        <p dir="ltr" style="text-align: left;">3. Move the .zip file that you just
+                                            downloaded to the <em>Lab03</em>&nbsp;folder and extract it. Remember, you
+                                            need to extract all .zip files or compressed folders in order for ArcGIS Pro
+                                            to be able to access it. After this step, you will have a folder with the
+                                            shapefile and associated files.</p>
+                                        <p dir="ltr" style="text-align: left;"><img
+                                                src="pluginfile.php/818056/mod_lesson/page_contents/6303/screenrecording2026_02_11at19.46.27_ezgif.com_video_to_gif_converter.gif"
+                                                alt="" role="presentation" class="img-fluid"><br></p>
+                                        <p dir="ltr" style="text-align: left;"><br></p>
+                                        <p dir="ltr" style="text-align: left;">4. Now, head over to&nbsp;<a
+                                                href="https://data.census.gov/">https://data.census.gov/</a>. This is
+                                            the US Census Bureau website hosting data for all the indicators we collect.
+                                            We want income data for all the counties in Michigan for the year 2024. In
+                                            the search box type "michigan counties income in 2024" and click on the
+                                            result with the name <em>S1901 | Income in the Past 12 Months (in 2024
+                                                Inflation-Adjusted Dollars)</em>. <span class=""
+                                                style="background-color: rgb(255, 207, 53);">Before you move onto the
+                                                next step, make sure you have selected the right table with the right
+                                                data for the right counties of Michigan. If you are unsure, ask
+                                                Gustavo.</span></p>
+                                        <p dir="ltr" style="text-align: left;"><img
+                                                src="pluginfile.php/818056/mod_lesson/page_contents/6303/pending_screenrecording2026_02_11at21.08.20_ezgif.com_video_to_gif_converter.gif"
+                                                alt="" width="800" height="450" role="presentation"
+                                                class="img-fluid atto_image_button_text-bottom"><br></p>
+                                        <p dir="ltr" style="text-align: left;"><br></p>
+                                        <p dir="ltr" style="text-align: left;">5. Download the 5-year ACS estimates for
+                                            2024 of the table above in .zip format. This will preserve identifiers or
+                                            code (<em>GEOID</em>) that we can use to match elements of this table to
+                                            objects in the <em>Counties</em>&nbsp;shapefile that you previously
+                                            downloaded. Once you have downloaded the .zip file, go to your Downloads
+                                            folder and change the name of the file to "Income". <span class=""
+                                                style="background-color: rgb(255, 207, 53);">Prior to clicking
+                                            </span><em><span class=""
+                                                    style="background-color: rgb(255, 207, 53);">DOWNLOAD
+                                                    .ZIP</span></em><span class=""
+                                                style="background-color: rgb(255, 207, 53);">, make sure you have
+                                                checked the box for AC5 5-year estimates for the year 2024 and unchecked
+                                                the box for ACS 1-year estimates for the same year. Also, pop-ups maybe
+                                                blocked in your browser, which would prevent the download. Ask Gustavo
+                                                if you are struggling with that.</span></p><img
+                                            src="pluginfile.php/818056/mod_lesson/page_contents/6303/screenrecording2026_02_12at09.27.41_ezgif.com_video_to_gif_converter.gif"
+                                            alt="" role="presentation" class="img-fluid"><br>
+                                        <p><br></p>
+                                        <p>6. Move the Income.zip to your <em>Lab03</em>&nbsp;folder and extract its
+                                            files.</p>
+                                        <p><img src="pluginfile.php/818056/mod_lesson/page_contents/6303/screenrecording2026_02_11at21.18.21_ezgif.com_video_to_gif_converter.gif"
+                                                alt="" width="800" height="450" role="presentation"
+                                                class="img-fluid atto_image_button_text-bottom"><br></p>
+                                        <p><br></p>
+                                        <p>7. Open the Income folder and open
+                                            the&nbsp;<em>ACSST5Y2024.S1901-Data</em>&nbsp;file with Microsoft Excel.</p>
+                                        <p><img src="pluginfile.php/818056/mod_lesson/page_contents/6303/screenrecording2026_02_12at09.32.17_ezgif.com_video_to_gif_converter.gif"
+                                                alt="" role="presentation" class="img-fluid"><br></p>
+                                        <p><br></p>
+                                        <p><span class="" style="background-color: rgb(255, 207, 53);">8. Answer Part 2
+                                                Questions in the handout.</span></p>
+                                        <p><br></p>
+                                        <p>9. Navigate to the next page.</p>
                                     </div>
-                                    <div class="box py-3 addlinks"><a
-                                            href="https://courses.albion.edu/mod/lesson/import.php?id=650491&amp;pageid=6304">Import
-                                            questions</a> |
-                                        <a
-                                            href="https://courses.albion.edu/mod/lesson/editpage.php?id=650491&amp;pageid=6304&amp;sesskey=QKSdjbCVOu&amp;qtype=21">Add
-                                            an end of branch</a> |
-                                        <a
-                                            href="https://courses.albion.edu/mod/lesson/editpage.php?id=650491&amp;pageid=6304&amp;sesskey=QKSdjbCVOu&amp;qtype=30">Add
-                                            a cluster</a> |
-                                        <a
-                                            href="https://courses.albion.edu/mod/lesson/editpage.php?id=650491&amp;pageid=6304&amp;sesskey=QKSdjbCVOu&amp;qtype=31">Add
-                                            an end of cluster</a> |
-                                        <a
-                                            href="https://courses.albion.edu/mod/lesson/editpage.php?id=650491&amp;pageid=6304&amp;qtype=20">Add
-                                            a content page</a> |
-                                        <a
-                                            href="https://courses.albion.edu/mod/lesson/editpage.php?id=650491&amp;pageid=6304">Add
-                                            a question page here</a>
+                                </div>
+                                <div class="box py-3 branchbuttoncontainer horizontal">
+                                    <div class="singlebutton">
+                                        <form method="post" action="https://courses.albion.edu/mod/lesson/continue.php">
+                                            <input type="hidden" name="id" value="650491">
+                                            <input type="hidden" name="pageid" value="6303">
+                                            <input type="hidden" name="sesskey" value="QKSdjbCVOu">
+                                            <input type="hidden" name="jumpto" value="-40">
+                                            <button type="submit" class="btn btn-secondary"
+                                                id="single_button69914e41daa551">Previous page</button>
+                                        </form>
+                                    </div>
+                                    <div class="singlebutton">
+                                        <form method="post" action="https://courses.albion.edu/mod/lesson/continue.php">
+                                            <input type="hidden" name="id" value="650491">
+                                            <input type="hidden" name="pageid" value="6303">
+                                            <input type="hidden" name="sesskey" value="QKSdjbCVOu">
+                                            <input type="hidden" name="jumpto" value="-1">
+                                            <button type="submit" class="btn btn-secondary"
+                                                id="single_button69914e41daa552">Next page</button>
+                                        </form>
                                     </div>
                                 </div>
                             </div>
@@ -2279,10 +2256,14 @@
 
             <footer id="page-footer" class="footer-popover bg-white">
                 <div data-region="footer-container-popover">
+                    <button class="btn btn-icon bg-secondary icon-no-margin btn-footer-popover"
+                        data-action="footer-popover" aria-label="Show footer" data-original-title="" title="">
+                        <i class="icon fa fa-question fa-fw " aria-hidden="true"></i>
+                    </button>
                 </div>
                 <div class="footer-content-popover container" data-region="footer-content-popover">
                     <div class="footer-section p-3 border-bottom">
-                        <div class="footer-support-link"><a href="http://docs.moodle.org/405/en_us/mod/lesson/edit"
+                        <div class="footer-support-link"><a href="http://docs.moodle.org/405/en_us/mod/lesson/view"
                                 target="_blank"><i class="icon fa fa-book fa-fw " aria-hidden="true"></i>Documentation
                                 for this page<i
                                     class="icon fa fa-arrow-up-right-from-square fa-fw fa fa-externallink fa-fw"
@@ -2334,9 +2315,9 @@
                 </div>
             </footer>
         </div>
-        <div id="drawer-69914326da0bc69914326d3d9f10" class=" drawer bg-white hidden" aria-hidden="true"
+        <div id="drawer-69914e41e34e169914e41daa5512" class=" drawer bg-white hidden" aria-hidden="true"
             data-region="right-hand-drawer" role="region" tabindex="0">
-            <div id="message-drawer-69914326da0bc69914326d3d9f10" class="message-app" data-region="message-drawer"
+            <div id="message-drawer-69914e41e34e169914e41daa5512" class="message-app" data-region="message-drawer"
                 role="region">
                 <h2 class="sr-only">Messaging</h2>
                 <div class="closewidget text-end pe-2">
@@ -2502,19 +2483,19 @@
                             <div class="p-3 border-bottom">
                                 <ul class="nav nav-pills nav-fill" role="tablist">
                                     <li class="nav-item">
-                                        <a id="contacts-tab-69914326da0bc69914326d3d9f10" class="nav-link active"
-                                            href="#contacts-tab-panel-69914326da0bc69914326d3d9f10" data-toggle="tab"
+                                        <a id="contacts-tab-69914e41e34e169914e41daa5512" class="nav-link active"
+                                            href="#contacts-tab-panel-69914e41e34e169914e41daa5512" data-toggle="tab"
                                             data-action="show-contacts-section" role="tab"
-                                            aria-controls="contacts-tab-panel-69914326da0bc69914326d3d9f10"
+                                            aria-controls="contacts-tab-panel-69914e41e34e169914e41daa5512"
                                             aria-selected="true">
                                             Contacts
                                         </a>
                                     </li>
                                     <li class="nav-item">
-                                        <a id="requests-tab-69914326da0bc69914326d3d9f10" class="nav-link"
-                                            href="#requests-tab-panel-69914326da0bc69914326d3d9f10" data-toggle="tab"
+                                        <a id="requests-tab-69914e41e34e169914e41daa5512" class="nav-link"
+                                            href="#requests-tab-panel-69914e41e34e169914e41daa5512" data-toggle="tab"
                                             data-action="show-requests-section" role="tab"
-                                            aria-controls="requests-tab-panel-69914326da0bc69914326d3d9f10"
+                                            aria-controls="requests-tab-panel-69914e41e34e169914e41daa5512"
                                             aria-selected="false">
                                             Requests
                                             <span class="badge bg-primary text-white ms-2 hidden"
@@ -2529,8 +2510,8 @@
                             <div class="tab-content d-flex flex-column h-100">
                                 <div class="tab-pane fade show active h-100 lazy-load-list" aria-live="polite"
                                     data-region="lazy-load-list" data-user-id="11160"
-                                    id="contacts-tab-panel-69914326da0bc69914326d3d9f10" data-section="contacts"
-                                    role="tabpanel" aria-labelledby="contacts-tab-69914326da0bc69914326d3d9f10">
+                                    id="contacts-tab-panel-69914e41e34e169914e41daa5512" data-section="contacts"
+                                    role="tabpanel" aria-labelledby="contacts-tab-69914e41e34e169914e41daa5512">
 
                                     <div class="hidden text-center p-2" data-region="empty-message-container">
                                         No contacts
@@ -2550,8 +2531,8 @@
 
                                 <div class="tab-pane fade h-100 lazy-load-list" aria-live="polite"
                                     data-region="lazy-load-list" data-user-id="11160"
-                                    id="requests-tab-panel-69914326da0bc69914326d3d9f10" data-section="requests"
-                                    role="tabpanel" aria-labelledby="requests-tab-69914326da0bc69914326d3d9f10">
+                                    id="requests-tab-panel-69914e41e34e169914e41daa5512" data-section="requests"
+                                    role="tabpanel" aria-labelledby="requests-tab-69914e41e34e169914e41daa5512">
 
                                     <div class="hidden text-center p-2" data-region="empty-message-container">
                                         No contact requests
@@ -2979,7 +2960,7 @@
                     </div>
                     <div class="h-100 view-overview-body" aria-hidden="false" data-region="view-overview"
                         data-user-id="11160">
-                        <div id="message-drawer-view-overview-container-69914326da0bc69914326d3d9f10"
+                        <div id="message-drawer-view-overview-container-69914e41e34e169914e41daa5512"
                             class="d-flex flex-column h-100" style="overflow-y: auto">
 
 
@@ -2989,9 +2970,9 @@
                                     <button
                                         class="btn btn-link w-100 text-start p-1 p-sm-2 d-flex rounded-0 align-items-center overview-section-toggle collapsed"
                                         data-toggle="collapse"
-                                        data-target="#view-overview-favourites-target-69914326da0bc69914326d3d9f10"
+                                        data-target="#view-overview-favourites-target-69914e41e34e169914e41daa5512"
                                         aria-expanded="false"
-                                        aria-controls="view-overview-favourites-target-69914326da0bc69914326d3d9f10">
+                                        aria-controls="view-overview-favourites-target-69914e41e34e169914e41daa5512">
                                         <span class="collapsed-icon-container">
                                             <span class="dir-rtl-hide"><i class="icon fa fa-chevron-right fa-fw "
                                                     aria-hidden="true"></i></span>
@@ -3026,9 +3007,9 @@
                                 </div>
                                 <div class="collapse border-bottom  lazy-load-list" aria-live="polite"
                                     data-region="lazy-load-list" data-user-id="11160"
-                                    id="view-overview-favourites-target-69914326da0bc69914326d3d9f10"
+                                    id="view-overview-favourites-target-69914e41e34e169914e41daa5512"
                                     aria-labelledby="view-overview-favourites-toggle"
-                                    data-parent="#message-drawer-view-overview-container-69914326da0bc69914326d3d9f10">
+                                    data-parent="#message-drawer-view-overview-container-69914e41e34e169914e41daa5512">
 
                                     <div class="hidden text-center p-2" data-region="empty-message-container">
                                         <p class="text-muted mt-2">No starred conversations</p>
@@ -3059,9 +3040,9 @@
                                     <button
                                         class="btn btn-link w-100 text-start p-1 p-sm-2 d-flex rounded-0 align-items-center overview-section-toggle collapsed"
                                         data-toggle="collapse"
-                                        data-target="#view-overview-group-messages-target-69914326da0bc69914326d3d9f10"
+                                        data-target="#view-overview-group-messages-target-69914e41e34e169914e41daa5512"
                                         aria-expanded="false"
-                                        aria-controls="view-overview-group-messages-target-69914326da0bc69914326d3d9f10">
+                                        aria-controls="view-overview-group-messages-target-69914e41e34e169914e41daa5512">
                                         <span class="collapsed-icon-container">
                                             <span class="dir-rtl-hide"><i class="icon fa fa-chevron-right fa-fw "
                                                     aria-hidden="true"></i></span>
@@ -3096,9 +3077,9 @@
                                 </div>
                                 <div class="collapse border-bottom  lazy-load-list" aria-live="polite"
                                     data-region="lazy-load-list" data-user-id="11160"
-                                    id="view-overview-group-messages-target-69914326da0bc69914326d3d9f10"
+                                    id="view-overview-group-messages-target-69914e41e34e169914e41daa5512"
                                     aria-labelledby="view-overview-group-messages-toggle"
-                                    data-parent="#message-drawer-view-overview-container-69914326da0bc69914326d3d9f10">
+                                    data-parent="#message-drawer-view-overview-container-69914e41e34e169914e41daa5512">
 
                                     <div class="hidden text-center p-2" data-region="empty-message-container">
                                         <p class="text-muted mt-2">No group conversations</p>
@@ -3129,9 +3110,9 @@
                                     <button
                                         class="btn btn-link w-100 text-start p-1 p-sm-2 d-flex rounded-0 align-items-center overview-section-toggle collapsed"
                                         data-toggle="collapse"
-                                        data-target="#view-overview-messages-target-69914326da0bc69914326d3d9f10"
+                                        data-target="#view-overview-messages-target-69914e41e34e169914e41daa5512"
                                         aria-expanded="false"
-                                        aria-controls="view-overview-messages-target-69914326da0bc69914326d3d9f10">
+                                        aria-controls="view-overview-messages-target-69914e41e34e169914e41daa5512">
                                         <span class="collapsed-icon-container">
                                             <span class="dir-rtl-hide"><i class="icon fa fa-chevron-right fa-fw "
                                                     aria-hidden="true"></i></span>
@@ -3166,9 +3147,9 @@
                                 </div>
                                 <div class="collapse border-bottom  lazy-load-list" aria-live="polite"
                                     data-region="lazy-load-list" data-user-id="11160"
-                                    id="view-overview-messages-target-69914326da0bc69914326d3d9f10"
+                                    id="view-overview-messages-target-69914e41e34e169914e41daa5512"
                                     aria-labelledby="view-overview-messages-toggle"
-                                    data-parent="#message-drawer-view-overview-container-69914326da0bc69914326d3d9f10">
+                                    data-parent="#message-drawer-view-overview-container-69914e41e34e169914e41daa5512">
 
                                     <div class="hidden text-center p-2" data-region="empty-message-container">
                                         <p class="text-muted mt-2">No private conversations</p>
@@ -3258,18 +3239,18 @@
                                         <div class="custom-control custom-radio mb-2">
                                             <input type="radio" name="message_blocknoncontacts"
                                                 class="custom-control-input"
-                                                id="block-noncontacts-69914326da0bc69914326d3d9f10-1" value="1">
+                                                id="block-noncontacts-69914e41e34e169914e41daa5512-1" value="1">
                                             <label class="custom-control-label ms-2"
-                                                for="block-noncontacts-69914326da0bc69914326d3d9f10-1">
+                                                for="block-noncontacts-69914e41e34e169914e41daa5512-1">
                                                 My contacts only
                                             </label>
                                         </div>
                                         <div class="custom-control custom-radio mb-2">
                                             <input type="radio" name="message_blocknoncontacts"
                                                 class="custom-control-input"
-                                                id="block-noncontacts-69914326da0bc69914326d3d9f10-0" value="0">
+                                                id="block-noncontacts-69914e41e34e169914e41daa5512-0" value="0">
                                             <label class="custom-control-label ms-2"
-                                                for="block-noncontacts-69914326da0bc69914326d3d9f10-0">
+                                                for="block-noncontacts-69914e41e34e169914e41daa5512-0">
                                                 My contacts and anyone in my courses
                                             </label>
                                         </div>
@@ -3284,9 +3265,9 @@
                                 <div data-preference="entertosend">
                                     <div class="custom-control custom-switch">
                                         <input type="checkbox" class="custom-control-input"
-                                            id="enter-to-send-69914326da0bc69914326d3d9f10">
+                                            id="enter-to-send-69914e41e34e169914e41daa5512">
                                         <label class="custom-control-label"
-                                            for="enter-to-send-69914326da0bc69914326d3d9f10">
+                                            for="enter-to-send-69914e41e34e169914e41daa5512">
                                             Use enter to send
                                         </label>
                                     </div>
@@ -3541,6 +3522,7 @@
     <div id="yui3-css-stamp" style="position: absolute !important; visibility: hidden !important" class=""></div>
 
 
+    <div></div>
     <script src="js/inline_scripts.js"></script>
 </body>
 

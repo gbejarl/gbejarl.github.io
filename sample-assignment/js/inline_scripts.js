@@ -367,7 +367,7 @@ function legacy_activity_onclick_handler_3(e) { e.halt(); window.open('https://c
 M.util.js_pending('core_courseformat/local/content/activity_header'); require(['core_courseformat/local/content/activity_header'], function(amd) {amd.init(); M.util.js_complete('core_courseformat/local/content/activity_header');});;
 
     require(['core/moremenu'], function(moremenu) {
-        moremenu(document.querySelector('#moremenu-69914326d7379-navbar-nav'));
+        moremenu(document.querySelector('#moremenu-69914e41dfcf9-navbar-nav'));
     });
 ;
 
@@ -378,7 +378,7 @@ require(
 function(
     $
 ) {
-    var uniqid = "69914326d80ed69914326d3d9f5";
+    var uniqid = "69914e41e12cf69914e41daa557";
     var container = $('#searchinput-navbar-' + uniqid);
     var opensearch = container.find('[data-action="opensearch"]');
     var input = container.find('[data-region="input"]');
@@ -409,7 +409,7 @@ require(
 function(
     $
 ) {
-    var uniqid = "69914326d83f669914326d3d9f6";
+    var uniqid = "69914e41e15ca69914e41daa558";
     var container = $('#searchinput-navbar-' + uniqid);
     var opensearch = container.find('[data-action="opensearch"]');
     var input = container.find('[data-region="input"]');
@@ -450,7 +450,7 @@ function(
     $,
     Popover
 ) {
-    var toggle = $('#message-drawer-toggle-69914326d8b0569914326d3d9f8');
+    var toggle = $('#message-drawer-toggle-69914e41e1d5f69914e41daa5510');
     Popover.init(toggle);
 });
 ;
@@ -461,7 +461,7 @@ function(
 ;
 
 require(['core/edit_switch'], function(editSwitch) {
-    editSwitch.init('69914326d8f7569914326d3d9f9-editingswitch');
+    editSwitch.init('69914e41e21b769914e41daa5511-editingswitch');
 });
 ;
 
@@ -489,7 +489,7 @@ require(['theme_boost/drawers'], function() {
 ;
 
     require(['core/moremenu'], function(moremenu) {
-        moremenu(document.querySelector('#moremenu-69914326d715c-nav-tabs'));
+        moremenu(document.querySelector('#moremenu-69914e41dfaaf-nav-tabs'));
     });
 ;
 
@@ -499,8 +499,8 @@ require(['theme_boost/footer-popover'], function(FooterPopover) {
 ;
 
 require(['jquery', 'core_message/message_drawer'], function($, MessageDrawer) {
-    var root = $('#message-drawer-69914326da0bc69914326d3d9f10');
-    MessageDrawer.init(root, '69914326da0bc69914326d3d9f10', false);
+    var root = $('#message-drawer-69914e41e34e169914e41daa5512');
+    MessageDrawer.init(root, '69914e41e34e169914e41daa5512', false);
 });
 ;
 
@@ -510,16 +510,6 @@ require(['theme_boost/loader', 'theme_boost/drawer'], function(Loader, Drawer) {
     M.util.js_complete('theme_boost/loader');
 });
 ;
-
-        require(['jquery', 'core/custom_interaction_events'], function($, CustomEvents) {
-            CustomEvents.define('#url_select69914326d3d9f11', [CustomEvents.events.accessibleChange]);
-            $('#url_select69914326d3d9f11').on(CustomEvents.events.accessibleChange, function() {
-                if ($(this).val()) {
-                    $('#mod_lesson_navigation_select').submit();
-                }
-            });
-        });
-    ;
 M.util.js_pending('core/notification'); require(['core/notification'], function(amd) {amd.init(818056, []); M.util.js_complete('core/notification');});;
 M.util.js_pending('core/log'); require(['core/log'], function(amd) {amd.setConfig({"level":"warn"}); M.util.js_complete('core/log');});;
 M.util.js_pending('core/page_global'); require(['core/page_global'], function(amd) {amd.init(); M.util.js_complete('core/page_global');});;
@@ -539,6 +529,6 @@ M.str = {"moodle":{"lastmodified":"Last modified","name":"Name","error":"Error",
 
 //<![CDATA[
 (function() {M.util.help_popups.setup(Y);
- M.util.js_pending('random69914326d3d9f12'); Y.on('domready', function() { M.util.js_complete("init");  M.util.js_complete('random69914326d3d9f12'); });
+ M.util.js_pending('random69914e41daa5516'); Y.on('domready', function() { M.util.js_complete("init");  M.util.js_complete('random69914e41daa5516'); });
 })();
 //]]>
