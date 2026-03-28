@@ -2731,7 +2731,7 @@ input[type="button"]:disabled,
 	justify-content: space-between;
 	background-color: #1f1815;
 	background-attachment: scroll, scroll;
-	background-image: url("images/overlay.png"), url("../../images/bg.jpg");
+	background-image: url("../../images/bg.jpg");
 	background-position: top left, top left;
 	background-repeat: repeat, no-repeat;
 	background-size: auto, 150%;
@@ -2781,9 +2781,11 @@ input[type="button"]:disabled,
 	margin: 0;
 }
 
+
 #header .image.avatar {
 	margin: 0 0 1em 0;
 	width: 6.25em;
+	box-shadow: 0 0 0.25em 0 rgba(124, 124, 124, 0.503);
 }
 
 /* Footer */
